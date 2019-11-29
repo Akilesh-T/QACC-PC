@@ -8,6 +8,8 @@ printf "%*s\n" $(((${#sub}+$COLUMNS)/2)) "$sub"
 sleep "0.5"
 echo " "
 
+set -e 
+
 osType=$(uname)
 case "$osType" in
         "Darwin")
